@@ -33,7 +33,7 @@ hello_world_string = paragraph_with_hello_world.text[start_index: start_index + 
 if hello_world_string != "Hello, World!":
     raise ValueError(f"Could not find the string 'Hello, World!'.  hello_world_string = '{hello_world_string}'")
 
-# Revere the string an even number of times:
+# Reverse the string an even number of times:
 hello_world_string = hello_world_string[::-1][::-1][::-1][::-1][::-1][::-1][::-1][::-1]
 
 
