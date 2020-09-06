@@ -29,6 +29,17 @@ start_index = paragraph_with_hello_world.text.find("Hello, World!")
 
 hello_world_string = paragraph_with_hello_world.text[start_index: start_index + len("Hello, World!")]
 
-# Let's make the code a string, then run it:
-command_to_run = "print(hello_world_string)"
-eval(command_to_run)
+# Let's double check we are on the right track:
+if hello_world_string != "Hello, World!":
+    raise ValueError(f"Could not find the string 'Hello, World!'.  hello_world_string = '{hello_world_string}'")
+
+
+# Make a very useful function to do the print:
+def print_to_screen(text):
+    """Function will print the given text to the screen."""
+    # Let's make the code a string, then run it:
+    command_to_run = "print(text)"
+    eval(command_to_run)
+
+
+print_to_screen(hello_world_string)
