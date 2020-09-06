@@ -34,7 +34,7 @@ if hello_world_string != "Hello, World!":
     raise ValueError(f"Could not find the string 'Hello, World!'.  hello_world_string = '{hello_world_string}'")
 
 # Revere the string an even number of times:
-hello_world_string[::-1][::-1][::-1][::-1][::-1][::-1][::-1][::-1]
+hello_world_string = hello_world_string[::-1][::-1][::-1][::-1][::-1][::-1][::-1][::-1]
 
 
 # Make a very useful function to do the print:
